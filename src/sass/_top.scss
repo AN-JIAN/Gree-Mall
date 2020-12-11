@@ -1,0 +1,64 @@
+$height:35px;
+%public_a {
+    text-decoration: $td;
+    font-size: $font12;
+    color: #cc0000;
+    line-height: $height;
+}
+
+%public_i {
+    font-style: normal;
+    margin: 0 10px;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+.top {
+    width: $page_width;
+    min-width: $box_width;
+    height: $height;
+    background-color: #eee;
+    .top_content {
+        display: flex;
+        width: $box_width;
+        height: $height;
+        margin: 0 auto;
+        justify-content: space-between;
+        .top_l {
+            width: 300px;
+            margin-left: 50px;
+            a {
+                @extend %public_a;
+            }
+            i {
+                @extend %public_i
+            }
+        }
+        .top_r {
+            // background-color: blueviolet;
+            height: 35px;
+            .top_r_menu {
+                float: left;
+                li {
+                    float: left;
+                    height: $height;
+                    line-height: $height;
+                    .iconfont {
+                        font-size: $font12;
+                        color: #747474;
+                    }
+                    a {
+                        @extend %public_a;
+                        color: #747474;
+                        &:hover {
+                            color: #cc0000;
+                        }
+                    }
+                    i {
+                        @extend %public_i
+                    }
+                }
+            }
+        }
+    }
+}

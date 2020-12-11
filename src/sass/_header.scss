@@ -1,0 +1,38 @@
+.header {
+    width: $box_width;
+    height: 110px;
+    background-color: orchid;
+    margin: 0 auto;
+    .head_logo {
+        width: 210px;
+        height: 80px;
+        // background-color: palegoldenrod;
+        float: left;
+        margin-top: 10px;
+        img {
+            width: 174px;
+            height: 100%;
+        }
+    }
+    .head_search {
+        width: 740px;
+        height: 96px;
+        background-color: palegreen;
+        float: left;
+        margin-left: 28px;
+    }
+    .head_shopcar {
+        width: 140px;
+        height: 40px;
+        background-color: palevioletred;
+        margin-top: 26px;
+        float: right;
+    }
+}
+
+.head_menu {
+    width: $box_width;
+    height: 36px;
+    background-color: purple;
+    margin: 10px auto;
+}

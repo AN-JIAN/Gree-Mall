@@ -1,0 +1,12 @@
+$page_width:100%;
+$box_width:1200px;
+$td:none;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+@import "_public";
+@import "top";
+@import "header";
+body {
+    background-color: #f5f5f5;
+}
