@@ -4,9 +4,13 @@ $td:none;
 $font12:12px;
 $font14:14px;
 $font16:16px;
+$cursor:pointer;
 @import "_public";
 @import "top";
 @import "header";
+@import "banner";
+@import "main";
+@import "footer";
 body {
     background-color: #f5f5f5;
 }
