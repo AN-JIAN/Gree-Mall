@@ -182,9 +182,9 @@
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
                             }
-                            a:nth-last-child(1) {
+                            a:nth-last-child(2) {
                                 color: #979797;
-                                font-size: 12px;
+                                font-size: $font12;
                                 text-decoration: $td;
                                 text-align: center;
                             }

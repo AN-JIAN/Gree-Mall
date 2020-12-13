@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+li {
+    list-style: none;
+}
+
+$page_width:100%;
+$box_width:1200px;
+$td:none;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$cursor:pointer;
+@import "top";
+@import "header";
+@import "public";
+@import "footer";
+.render {
+    width: $box_width;
+    height: 700px;
+    margin: 20px auto;
+    background-color: hotpink;
+}

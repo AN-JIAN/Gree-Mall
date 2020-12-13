@@ -133,69 +133,66 @@ $height:36px;
     width: 1200px;
     height: 36px;
     margin: 0 auto;
-    .nav {
-        position: relative;
+    // position: relative;
+    .menu {
+        float: left;
         width: 174px;
         height: $height;
-        float: left;
-        .menu {
-            // float: left;
-            width: 174px;
-            height: $height;
-            line-height: $height;
-            background-color: #cc0000;
+        line-height: $height;
+        background-color: #cc0000;
+        text-align: center;
+        position: relative;
+        a {
+            text-decoration: $td;
+            color: #fff;
+            font-size: $font12;
             text-align: center;
-            a {
-                text-decoration: $td;
-                color: #fff;
-                font-size: $font12;
-                // text-align: center;
-            }
-            .iconfont {
-                color: #fff;
-                vertical-align: middle;
-            }
         }
-        .nav_pro {
+        .iconfont {
+            color: #fff;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .nav {
             position: absolute;
             left: 0;
             top: 36px;
             width: 174px;
             height: 450px;
-            background: rgba(0, 0, 0, .55);
-            li {
-                height: 34px;
-                line-height: 34px;
-                img {
-                    width: 20px;
-                    height: 20px;
-                    vertical-align: middle;
-                }
-                a {
-                    text-decoration: $td;
-                    font-size: $font12;
-                    color: #fff;
-                }
-                i {
-                    float: right;
-                    margin-right: 12px;
-                    color: #fff;
-                }
-                &:hover {
-                    background-color: #fff;
-                    a,
+            z-index: 10;
+            .nav_pro {
+                width: 174px;
+                height: 450px;
+                z-index: 999;
+                background: rgba(0, 0, 0, .55);
+                text-align: left;
+                li {
+                    height: 34px;
+                    line-height: 34px;
+                    margin-left: 5px;
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        vertical-align: middle;
+                    }
+                    a {
+                        text-decoration: $td;
+                        font-size: $font12;
+                        color: #fff;
+                    }
                     i {
-                        color: #cc0000;
+                        float: right;
+                        margin-right: 12px;
+                        color: #fff;
+                    }
+                    &:hover {
+                        background-color: #fff;
+                        a,
+                        i {
+                            color: #cc0000;
+                        }
                     }
                 }
-            }
-            .subnav {
-                position: absolute;
-                left: 174px;
-                top: 0;
-                width: 600px;
-                height: 450px;
-                background-color: brown;
             }
         }
     }

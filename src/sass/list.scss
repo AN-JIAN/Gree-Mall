@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+li {
+    list-style: none;
+}
+
+$page_width:100%;
+$box_width:1200px;
+$td:none;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$cursor:pointer;
+@import "top";
+@import "footer";
+%public_a {
+    text-decoration: $td;
+    font-size: $font12;
+    color: #cc0000;
+    line-height: $height;
+}
+
+%public_i {
+    font-style: normal;
+    margin: 0 10px;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+.top {
+    width: $page_width;
+    min-width: $box_width;
+    height: $height;
+    background-color: #eee;
+    .top_content {
+        display: flex;
+        width: $box_width;
+        height: $height;
+        margin: 0 auto;
+        justify-content: space-between;
+        .top_l {
+            width: 300px;
+            margin-left: 50px;
+            a {
+                @extend %public_a;
+            }
+            i {
+                @extend %public_i
+            }
+        }
+        .top_r {
+            // background-color: blueviolet;
+            height: 35px;
+            .top_r_menu {
+                float: left;
+                li {
+                    float: left;
+                    height: $height;
+                    line-height: $height;
+                    .iconfont {
+                        font-size: $font12;
+                        color: #747474;
+                    }
+                    a {
+                        @extend %public_a;
+                        color: #747474;
+                        &:hover {
+                            color: #cc0000;
+                        }
+                    }
+                    i {
+                        @extend %public_i
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list_header {
+    width: $box_width;
+    height: 80px;
+    margin: 10px auto;
+    position: relative;
+    .logo {
+        float: left;
+        width: 160px;
+        height: 80px;
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .shop_logo {
+        float: left;
+        text-align: center;
+        // display: inline-block;
+        padding: 10px 40px 10px 20px;
+        border-right: 1px solid #dddddd;
+        border-left: 1px solid #dddddd;
+        margin-right: 20px;
+        margin-top: 20px;
+        h2 {
+            text-align: center;
+            font-size: $font14;
+            font-style: normal;
+        }
+    }
+    .shop_follow {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        float: left;
+        text-align: center;
+        padding: 20px 0;
+        // margin-left: 100px;
+        p {
+            font-size: 12px;
+            margin-bottom: 3px;
+            color: #333333;
+            span {
+                color: #e50606;
+            }
+        }
+        button {
+            outline: none;
+            cursor: pointer;
+            padding: 2px 10px;
+            border: none;
+            background-color: #f5ca1b;
+            font-size: 12px;
+            color: #ffffff;
+            border-radius: 20px;
+        }
+    }
+    %public_btn {
+        width: 80px;
+        color: #fff;
+        border: none;
+        outline-style: none;
+        font-size: 12px;
+        height: 34px;
+        line-height: 32px;
+        background: #cc0000;
+    }
+    .mid_search {
+        float: right;
+        padding-right: 79px;
+        width: auto;
+        width: 416px;
+        height: 35px;
+        margin-top: 25px;
+        border: 2px solid #cc0000;
+        input {
+            width: 321px;
+            height: 33px;
+            padding-left: 10px;
+            background-color: #fff;
+            border: none;
+            color: #323232;
+            outline-style: none;
+            border: none;
+        }
+        button {
+            @extend %public_btn;
+        }
+    }
+    .btn_shop {
+        position: absolute;
+        top: 50%;
+        margin-top: -13px;
+        right: 2px;
+        width: 80px;
+        background: #666;
+        height: 34px;
+        line-height: 34px;
+        border: none;
+        outline-style: none;
+        color: #fff;
+    }
+}
+
+.list_banner {
+    width: 100%;
+    height: 450px;
+    background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/31/a248c186-fd9d-47bb-9bb6-409e588d4d86.jpg) no-repeat center;
+}
+
+.pro_list {
+    display: block;
+    height: 600px;
+    background: rgb(123, 183, 255);
+    ul {
+        width: 1020px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10px;
+        li {
+            width: 235px;
+            float: left;
+            background: #fff;
+            text-align: center;
+            margin: 0 10px 10px 0;
+            img {
+                width: 168px;
+                height: 170px;
+                margin-top: 10px;
+            }
+            a {
+                display: block;
+                font-size: $font12;
+                text-decoration: $td;
+                color: #333;
+                height: 25px;
+                margin-bottom: 12px;
+            }
+            span {
+                display: block;
+                font-size: $font14;
+                color: #E60041;
+                text-align: left;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}

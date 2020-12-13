@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+li {
+  list-style: none;
+}
+
+.top .top_content .top_l a, .top .top_content .top_r .top_r_menu li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #cc0000;
+  line-height: 35px;
+}
+
+.top .top_content .top_l i, .top .top_content .top_r .top_r_menu li i {
+  font-style: normal;
+  margin: 0 10px;
+  font-size: 12px;
+  color: #c8c8c8;
+}
+
+.top {
+  width: 100%;
+  min-width: 1200px;
+  height: 35px;
+  background-color: #eee;
+}
+.top .top_content {
+  display: flex;
+  width: 1200px;
+  height: 35px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.top .top_content .top_l {
+  width: 300px;
+  margin-left: 50px;
+}
+.top .top_content .top_r {
+  height: 35px;
+}
+.top .top_content .top_r .top_r_menu {
+  float: left;
+}
+.top .top_content .top_r .top_r_menu li {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+}
+.top .top_content .top_r .top_r_menu li .iconfont {
+  font-size: 12px;
+  color: #747474;
+}
+.top .top_content .top_r .top_r_menu li a {
+  color: #747474;
+}
+.top .top_content .top_r .top_r_menu li a:hover {
+  color: #cc0000;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .service {
+  width: 1200px;
+  margin-top: 26px;
+  padding: 40px 0;
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #dedede;
+}
+.footer .service li {
+  float: left;
+  border-right: 1px solid #dedede;
+  padding: 0 25px;
+  cursor: pointer;
+}
+.footer .serve {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0px auto;
+  background: #fff;
+  border-top: 1px solid #e2e2e2;
+  overflow: hidden;
+  padding-top: 37px;
+}
+.footer .serve li {
+  width: 180px;
+  float: left;
+  line-height: 26px;
+  text-align: center;
+}
+.footer .serve li dt {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #525252;
+}
+.footer .serve li dd a {
+  color: #b2b2b2;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer .copyright {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 66px 0 30px 21px;
+  box-sizing: border-box;
+}
+.footer .copyright p {
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+.login_head {
+  width: 1200px;
+  height: 110px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.login_head .logo_box {
+  float: left;
+  width: 210px;
+  height: 80px;
+  margin-top: 10px;
+}
+.login_head .logo_box img {
+  max-width: 174px;
+  height: auto;
+  max-height: 80px;
+}
+.login_head .welcome {
+  width: 140px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  text-align: center;
+}
+.login_head .welcome i {
+  font-style: normal;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #747474;
+}
+.login_head .welcome p {
+  display: inline-block;
+  font-size: 24px;
+  color: #747474;
+}
+
+.registry {
+  width: 980px;
+  height: 542px;
+  margin: 50px auto;
+  border: 1px #e8e8e8 solid;
+}
+.registry legend {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #2daae4;
+}
+.registry ul {
+  width: 750px;
+  margin: 100px auto;
+}
+.registry ul li {
+  height: 60px;
+  margin-top: 10px;
+  position: relative;
+}
+.registry ul li div {
+  display: inline-block;
+  position: relative;
+  min-width: 180px;
+  max-width: 650px;
+  text-align: right;
+}
+.registry ul li div i {
+  font-style: normal;
+  color: red;
+}
+.registry ul li div span {
+  font-size: 14px;
+  color: #747474;
+}
+.registry ul li .phone_box,
+.registry ul li .mima_box,
+.registry ul li .password {
+  width: 280px;
+  height: 39px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 39px;
+}
+.registry ul li .phone_box input,
+.registry ul li .mima_box input,
+.registry ul li .password input {
+  color: #474747;
+  width: 220px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 15px;
+  outline-style: none;
+  border: none;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.registry ul li .phone_box .iconfont,
+.registry ul li .mima_box .iconfont,
+.registry ul li .password .iconfont {
+  font-size: 25px;
+  color: #ccc;
+  vertical-align: middle;
+}
+.registry ul li p {
+  width: 280px;
+  background-color: greenyellow;
+  position: absolute;
+  top: 6px;
+  right: -5px;
+  text-align: center;
+  color: red;
+  display: none;
+}
+.registry ul li .protocol {
+  font-size: 12px;
+  margin-left: 175px;
+}
+.registry ul li .protocol input {
+  border: none;
+  outline-style: none;
+  vertical-align: middle;
+}
+.registry ul li .protocol a {
+  text-decoration: none;
+  color: #747474;
+  font-size: 12px;
+}
+.registry button {
+  background: #cc0000;
+  text-align: center;
+  border: none;
+  font-family: Microsoft Yahei;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-left: 180px;
+}
+
+/*# sourceMappingURL=registry.css.map */

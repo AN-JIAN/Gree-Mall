@@ -1,134 +1,14 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
 }
 
 body {
-  line-height: 1;
   background-color: #fafafa;
 }
 
-ol,
-ul,
 li {
   list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 .top .top_content .top_l a, .top .top_content .top_r .top_r_menu li a {
@@ -392,239 +272,137 @@ table {
   color: #747474;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  background-color: goldenrod;
-  background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/5/17/174b64de-9655-4999-94ec-edf835463b0c.jpg) no-repeat center;
-}
-.banner .dot {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-}
-.banner .dot li {
-  float: left;
-  width: 18px;
-  height: 18px;
-  background-color: lime;
-  border-radius: 50%;
-  margin-left: 10px;
-}
-
-.main .guesslove h3, .main h3, .main .index_video h3 {
-  font-size: 18px;
-  color: #757575;
-  margin: 14px 0;
-}
-
-.main .choiceness .choiceness2 .choiceness2_top img {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
   border: 0;
-  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-.main {
-  width: 1200px;
-  margin: 0 auto;
+body {
+  line-height: 1;
+  background-color: #fafafa;
 }
-.main .guesslove {
-  width: 1200px;
-  height: 218px;
+
+ol,
+ul,
+li {
+  list-style: none;
 }
-.main .guesslove .hot_pro {
-  display: flex;
-  justify-content: space-between;
+
+blockquote,
+q {
+  quotes: none;
 }
-.main .choiceness {
-  width: 1200px;
-  height: 570px;
-  display: flex;
-  justify-content: space-between;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-.main .choiceness .choiceness1 {
-  width: 300px;
-  height: 570px;
-  cursor: pointer;
-  padding-right: 10px;
-}
-.main .choiceness .choiceness2 {
-  display: flex;
-  flex-direction: column;
-  width: 590px;
-  height: 570px;
-  cursor: pointer;
-  padding: 0 10px 10px 0;
-}
-.main .choiceness .choiceness2 .choiceness2_top {
-  width: 590px;
-  height: 290px;
-  padding-bottom: 10px;
-}
-.main .choiceness .choiceness2 .choiceness2_bottom {
-  display: flex;
-  justify-content: space-between;
-  width: 590px;
-  height: 290px;
-  cursor: pointer;
-}
-.main .choiceness .choiceness2 .choiceness2_bottom .treater {
-  width: 300px;
-  height: 280px;
-  cursor: pointer;
-  padding-right: 10px;
-}
-.main .choiceness .choiceness2 .choiceness2_bottom .washer {
-  width: 300px;
-  height: 280px;
-  cursor: pointer;
-}
-.main .choiceness .choiceness3 {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 570px;
-}
-.main .choiceness .choiceness3 .water_purifier {
-  width: 290px;
-  height: 280px;
-  padding-bottom: 10px;
-}
-.main .choiceness .choiceness3 .electric_cooker {
-  width: 290px;
-  height: 280px;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li img {
-  width: 190px;
-  height: 190px;
-  text-align: center;
-}
-.main .floors {
-  width: 1200px;
-}
-.main .floors .floor1 {
-  width: 1200px;
-  height: 616px;
-}
-.main .floors .floor1 .floor_nav {
-  height: 26px;
-  margin: 26px 0 10px;
-}
-.main .floors .floor1 .floor_nav b {
-  background: #f90002;
-  width: 37px;
-  height: 26px;
-  line-height: 26px;
-  text-align: center;
-  display: inline-block;
-  color: #fff;
-  font-size: 14px;
-}
-.main .floors .floor1 .floor_nav span {
-  font-size: 14px;
-  color: #757575;
-  margin-left: 8px;
-  margin-right: 12px;
-}
-.main .floors .floor1 .floor_nav a {
-  display: inline-block;
-  font-size: 12px;
-  color: #757575;
-  text-decoration: none;
-  height: 26px;
-  line-height: 26px;
-}
-.main .floors .floor1 .floor_nav a:hover {
-  color: #cc0000;
-  border-bottom: 2px solid #cc0000;
-}
-.main .floors .floor1 .floor_pro {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  height: 567px;
-}
-.main .floors .floor1 .floor_pro .floor_pro_l {
-  width: 210px;
-  height: 567px;
-  margin-right: 12px;
-  cursor: pointer;
-}
-.main .floors .floor1 .floor_pro .floor_pro_mid {
-  width: 348px;
-  height: 567px;
-  margin-right: 11px;
-  cursor: pointer;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r {
-  height: 567px;
-  cursor: pointer;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul {
-  width: 650px;
-  height: 567px;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li {
-  float: left;
-  width: 200px;
-  height: 280px;
-  background-color: #fff;
-  margin: 0 10px 8px 0;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li a {
-  color: #3e3a39;
-  text-decoration: none;
-  font-size: 14px;
-  text-align: center;
-  overflow: hidden;
-  display: block;
-  margin-top: 6px;
-  width: 100%;
-  height: 17px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li a:nth-last-child(2) {
-  color: #979797;
-  font-size: 12px;
-  text-decoration: none;
-  text-align: center;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li span {
-  color: #FF4D4F;
-  font-size: 14px;
-  cursor: pointer;
-  display: block;
-  text-align: center;
-  margin-top: 15px;
-}
-.main .index_video {
-  width: 1200px;
-  background-color: coral;
-}
-.main .index_video h3 {
-  color: #000;
-  height: 40px;
-  line-height: 40px;
-}
-.main .index_video ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.main .index_video ul li {
-  float: left;
-  width: 280px;
-  height: 180px;
-  background-color: darkviolet;
-  cursor: pointer;
-}
-.main .footad {
-  width: 1200px;
-  height: 418px;
-  margin-top: 40px;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .footer {
@@ -685,8 +463,11 @@ table {
   color: #b2b2b2;
 }
 
-body {
-  background-color: #f5f5f5;
+.render {
+  width: 1200px;
+  height: 700px;
+  margin: 20px auto;
+  background-color: hotpink;
 }
 
-/*# sourceMappingURL=index1.css.map */
+/*# sourceMappingURL=detail.css.map */

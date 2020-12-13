@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+li {
+    list-style: none;
+}
+
+$page_width:100%;
+$box_width:1200px;
+$td:none;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$cursor:pointer;
+@import "footer";
+// 欢迎
+.login_head {
+    width: 1200px;
+    height: 110px;
+    background-color: #fff;
+    margin: 0 auto;
+    .logo_box {
+        float: left;
+        width: 210px;
+        height: 80px;
+        margin-top: 10px;
+        img {
+            max-width: 174px;
+            height: auto;
+            max-height: 80px;
+        }
+    }
+    $color:#747474;
+    .welcome {
+        width: 140px;
+        height: 100px;
+        line-height: 100px;
+        float: left;
+        text-align: center;
+        // line-height: 100px;
+        i {
+            font-style: normal;
+            margin-right: 10px;
+            font-size: 24px;
+            color: $color;
+        }
+        p {
+            display: inline-block;
+            font-size: 24px;
+            color: $color;
+        }
+    }
+}
+
+// 登陆
+.register {
+    width: 980px;
+    height: 410px;
+    margin: 10px auto;
+    // background-color: violet;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    .register_pic {
+        width: 500px;
+        height: 380px;
+        float: left;
+        margin: 10px 30px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .register_box {
+        width: 380px;
+        height: 380px;
+        float: right;
+        margin: 10px 0px 0px 10px;
+        padding-top: 20px;
+        ul {
+            width: 295px;
+            height: auto;
+            overflow: hidden;
+            margin-top: 40px;
+            float: left;
+            font-size: 14px;
+            li {
+                width: 292px;
+                height: 39px;
+                // background: #fff;
+                margin-bottom: 20px;
+                border: 1px solid #cccccc;
+                &:nth-child(4) {
+                    border: none;
+                }
+                input {
+                    width: 250px;
+                    color: #474747;
+                    height: 39px;
+                    line-height: 39px;
+                    padding-left: 15px;
+                    background: #fff;
+                    border-radius: 2px;
+                    border: none;
+                    outline-style: none;
+                    font-size: 14px;
+                }
+                .iconfont {
+                    color: #cccccc;
+                }
+                .hint {
+                    margin-left: 16px;
+                    color: red;
+                    font-size: 12px;
+                    display: none;
+                }
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #cc0000;
+                    border: none;
+                    font-size: 18px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 2px;
+                    padding: 0px 25px;
+                    outline-style: none;
+                    cursor: pointer;
+                }
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #747474;
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    .iconfont {
+                        font-size: 20px;
+                        color: cornflowerblue;
+                        border-radius: 50%;
+                    }
+                    .weixin {
+                        color: greenyellow;
+                    }
+                }
+            }
+        }
+    }
+}
