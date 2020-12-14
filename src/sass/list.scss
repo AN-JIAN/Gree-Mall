@@ -194,42 +194,53 @@ $cursor:pointer;
     background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/31/a248c186-fd9d-47bb-9bb6-409e588d4d86.jpg) no-repeat center;
 }
 
+// 渲染列表样式
 .pro_list {
-    display: block;
-    height: 600px;
-    background: rgb(123, 183, 255);
+    width: 1200px;
+    // background: rgb(123, 183, 255);
+    margin: 20px auto;
     ul {
-        width: 1020px;
-        height: auto;
+        width: 1200px;
         margin: 0 auto;
-        padding-top: 10px;
-        li {
-            width: 235px;
-            float: left;
-            background: #fff;
-            text-align: center;
-            margin: 0 10px 10px 0;
-            img {
-                width: 168px;
-                height: 170px;
-                margin-top: 10px;
-            }
-            a {
-                display: block;
-                font-size: $font12;
-                text-decoration: $td;
-                color: #333;
-                height: 25px;
-                margin-bottom: 12px;
-            }
-            span {
-                display: block;
-                font-size: $font14;
-                color: #E60041;
-                text-align: left;
-                margin-bottom: 15px;
-                font-weight: bold;
-            }
+    }
+    li {
+        width: 200px;
+        padding: 10px;
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid orangered;
+        height: 310px;
+        position: relative;
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+            display: block;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        p {
+            width: 200px;
+            height: 48px;
+            line-height: 24px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        em {
+            font-style: normal;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            color: magenta;
+        }
+        span {
+            position: absolute;
+            left: 10px;
+            bottom: 5px;
+            color: tomato;
         }
     }
 }

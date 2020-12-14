@@ -202,16 +202,69 @@
             }
         }
     }
+    // 渲染列表样式
+    .render {
+        width: $box_width;
+        margin: 20px auto;
+        font-size: $font14;
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        li {
+            width: 208px;
+            padding: 10px;
+            float: left;
+            margin: 0 10px 10px 0;
+            border: 1px solid orangered;
+            height: 310px;
+            position: relative;
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #333;
+                display: block;
+            }
+            img {
+                width: 210px;
+                height: 200px;
+                display: block;
+            }
+            p {
+                width: 200px;
+                height: 48px;
+                line-height: 24px;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+            span {
+                position: absolute;
+                left: 10px;
+                bottom: 5px;
+                color: tomato;
+            }
+            em {
+                font-style: normal;
+                position: absolute;
+                right: 10px;
+                bottom: 5px;
+                color: magenta;
+            }
+        }
+    }
     // 视频
     .index_video {
         width: $box_width;
-        // height: 220px;
-        background-color: coral;
+        height: 220px;
+        // background-color: coral;
+        margin-top: 50px;
         h3 {
             @extend %public_h3;
             color: #000;
             height: 40px;
             line-height: 40px;
+            margin-top: 100px;
         }
         ul {
             width: 100%;

@@ -281,43 +281,52 @@ li {
 }
 
 .pro_list {
-  display: block;
-  height: 600px;
-  background: #7bb7ff;
+  width: 1200px;
+  margin: 20px auto;
 }
 .pro_list ul {
-  width: 1020px;
-  height: auto;
+  width: 1200px;
   margin: 0 auto;
-  padding-top: 10px;
 }
-.pro_list ul li {
-  width: 235px;
+.pro_list li {
+  width: 200px;
+  padding: 10px;
   float: left;
-  background: #fff;
-  text-align: center;
   margin: 0 10px 10px 0;
+  border: 1px solid orangered;
+  height: 310px;
+  position: relative;
 }
-.pro_list ul li img {
-  width: 168px;
-  height: 170px;
-  margin-top: 10px;
-}
-.pro_list ul li a {
-  display: block;
-  font-size: 12px;
+.pro_list li a {
   text-decoration: none;
-  color: #333;
-  height: 25px;
-  margin-bottom: 12px;
-}
-.pro_list ul li span {
-  display: block;
   font-size: 14px;
-  color: #E60041;
-  text-align: left;
-  margin-bottom: 15px;
-  font-weight: bold;
+  color: #333;
+  display: block;
+}
+.pro_list li img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.pro_list li p {
+  width: 200px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.pro_list li em {
+  font-style: normal;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  color: magenta;
+}
+.pro_list li span {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: tomato;
 }
 
 /*# sourceMappingURL=list.css.map */

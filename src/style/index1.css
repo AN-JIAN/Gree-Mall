@@ -340,6 +340,7 @@ table {
   z-index: 10;
 }
 .head_menu .menu .nav .nav_pro {
+  position: relative;
   width: 174px;
   height: 450px;
   z-index: 999;
@@ -373,6 +374,34 @@ table {
 .head_menu .menu .nav .nav_pro li:hover i {
   color: #cc0000;
 }
+.head_menu .menu .nav .nav_pro li:hover .subnav {
+  display: block;
+}
+.head_menu .menu .nav .nav_pro li .subnav {
+  position: absolute;
+  left: 174px;
+  top: 0;
+  width: 672px;
+  height: 450px;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
+  display: none;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul {
+  width: 672px;
+  height: 450px;
+  text-align: center;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul li {
+  float: left;
+  margin: 20px 20px 0 50px;
+  text-align: center;
+  border-bottom: 1px solid lime;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul li a {
+  color: magenta;
+}
 .head_menu .nav_r {
   float: left;
   height: 36px;
@@ -392,25 +421,42 @@ table {
   color: #747474;
 }
 
-.banner {
-  position: relative;
+.banner_box {
   width: 100%;
   height: 450px;
-  background-color: goldenrod;
-  background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/5/17/174b64de-9655-4999-94ec-edf835463b0c.jpg) no-repeat center;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
 }
-.banner .dot {
+.banner_box .banner {
+  width: 1920px;
+  height: 450px;
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  left: 0;
+  top: 0;
 }
-.banner .dot li {
+.banner_box .banner li {
   float: left;
-  width: 18px;
-  height: 18px;
+}
+.banner_box .dot {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+.banner_box .dot li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  text-align: center;
   background-color: lime;
   border-radius: 50%;
-  margin-left: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.banner_box .dot .active {
+  background-color: red;
 }
 
 .main .guesslove h3, .main h3, .main .index_video h3 {
@@ -599,14 +645,66 @@ table {
   text-align: center;
   margin-top: 15px;
 }
+.main .render {
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 14px;
+}
+.main .render ul {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .render li {
+  width: 208px;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 10px 0;
+  border: 1px solid orangered;
+  height: 310px;
+  position: relative;
+}
+.main .render li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+.main .render li img {
+  width: 210px;
+  height: 200px;
+  display: block;
+}
+.main .render li p {
+  width: 200px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.main .render li span {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: tomato;
+}
+.main .render li em {
+  font-style: normal;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  color: magenta;
+}
 .main .index_video {
   width: 1200px;
-  background-color: coral;
+  height: 220px;
+  margin-top: 50px;
 }
 .main .index_video h3 {
   color: #000;
   height: 40px;
   line-height: 40px;
+  margin-top: 100px;
 }
 .main .index_video ul {
   width: 100%;

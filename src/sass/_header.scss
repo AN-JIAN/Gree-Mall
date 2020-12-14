@@ -161,12 +161,14 @@ $height:36px;
             height: 450px;
             z-index: 10;
             .nav_pro {
+                position: relative;
                 width: 174px;
                 height: 450px;
                 z-index: 999;
                 background: rgba(0, 0, 0, .55);
                 text-align: left;
                 li {
+                    // position: relative;
                     height: 34px;
                     line-height: 34px;
                     margin-left: 5px;
@@ -190,6 +192,34 @@ $height:36px;
                         a,
                         i {
                             color: #cc0000;
+                        }
+                        .subnav {
+                            display: block;
+                        }
+                    }
+                    .subnav {
+                        position: absolute;
+                        left: 174px;
+                        top: 0;
+                        width: 672px;
+                        height: 450px;
+                        overflow: hidden;
+                        z-index: 10;
+                        background-color: #fff;
+                        display: none;
+                        ul {
+                            width: 672px;
+                            height: 450px;
+                            text-align: center;
+                            li {
+                                float: left;
+                                margin: 20px 20px 0 50px;
+                                text-align: center;
+                                border-bottom: 1px solid lime;
+                                a {
+                                    color: magenta;
+                                }
+                            }
                         }
                     }
                 }

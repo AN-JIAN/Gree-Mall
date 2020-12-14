@@ -220,6 +220,7 @@ li {
   z-index: 10;
 }
 .head_menu .menu .nav .nav_pro {
+  position: relative;
   width: 174px;
   height: 450px;
   z-index: 999;
@@ -252,6 +253,34 @@ li {
 .head_menu .menu .nav .nav_pro li:hover a,
 .head_menu .menu .nav .nav_pro li:hover i {
   color: #cc0000;
+}
+.head_menu .menu .nav .nav_pro li:hover .subnav {
+  display: block;
+}
+.head_menu .menu .nav .nav_pro li .subnav {
+  position: absolute;
+  left: 174px;
+  top: 0;
+  width: 672px;
+  height: 450px;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
+  display: none;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul {
+  width: 672px;
+  height: 450px;
+  text-align: center;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul li {
+  float: left;
+  margin: 20px 20px 0 50px;
+  text-align: center;
+  border-bottom: 1px solid lime;
+}
+.head_menu .menu .nav .nav_pro li .subnav ul li a {
+  color: magenta;
 }
 .head_menu .nav_r {
   float: left;
