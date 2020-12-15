@@ -17,7 +17,7 @@ if($conn->connect_error){
 
 
 //2.输出接口
-$result=$conn->query("select * from taobao");
+$result=$conn->query("select * from gree");
 
 $arr = array();
 

@@ -541,7 +541,7 @@ table {
   width: 290px;
   height: 280px;
 }
-.main .floors .floor1 .floor_pro .floor_pro_r ul li img {
+.main .floors .floor .floor_pro .floor_pro_r ul li a img {
   width: 190px;
   height: 190px;
   text-align: center;
@@ -549,15 +549,15 @@ table {
 .main .floors {
   width: 1200px;
 }
-.main .floors .floor1 {
+.main .floors .floor {
   width: 1200px;
   height: 616px;
 }
-.main .floors .floor1 .floor_nav {
+.main .floors .floor .floor_nav {
   height: 26px;
   margin: 26px 0 10px;
 }
-.main .floors .floor1 .floor_nav b {
+.main .floors .floor .floor_nav b {
   background: #f90002;
   width: 37px;
   height: 26px;
@@ -567,13 +567,13 @@ table {
   color: #fff;
   font-size: 14px;
 }
-.main .floors .floor1 .floor_nav span {
+.main .floors .floor .floor_nav span {
   font-size: 14px;
   color: #757575;
   margin-left: 8px;
   margin-right: 12px;
 }
-.main .floors .floor1 .floor_nav a {
+.main .floors .floor .floor_nav a {
   display: inline-block;
   font-size: 12px;
   color: #757575;
@@ -581,69 +581,71 @@ table {
   height: 26px;
   line-height: 26px;
 }
-.main .floors .floor1 .floor_nav a:hover {
+.main .floors .floor .floor_nav a:hover {
   color: #cc0000;
   border-bottom: 2px solid #cc0000;
 }
-.main .floors .floor1 .floor_pro {
+.main .floors .floor .floor_pro {
   display: flex;
   justify-content: space-between;
   width: 1200px;
   height: 567px;
 }
-.main .floors .floor1 .floor_pro .floor_pro_l {
-  width: 210px;
+.main .floors .floor .floor_pro .floor_pro_l {
   height: 567px;
   margin-right: 12px;
   cursor: pointer;
 }
-.main .floors .floor1 .floor_pro .floor_pro_mid {
-  width: 348px;
+.main .floors .floor .floor_pro .floor_pro_mid {
   height: 567px;
   margin-right: 11px;
   cursor: pointer;
 }
-.main .floors .floor1 .floor_pro .floor_pro_r {
+.main .floors .floor .floor_pro .floor_pro_r {
   height: 567px;
   cursor: pointer;
 }
-.main .floors .floor1 .floor_pro .floor_pro_r ul {
+.main .floors .floor .floor_pro .floor_pro_r ul {
   width: 650px;
   height: 567px;
+  border: 1px solid orangered;
 }
-.main .floors .floor1 .floor_pro .floor_pro_r ul li {
+.main .floors .floor .floor_pro .floor_pro_r ul li {
   float: left;
   width: 200px;
-  height: 280px;
+  height: 260px;
   background-color: #fff;
-  margin: 0 10px 8px 0;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li a {
-  color: #3e3a39;
-  text-decoration: none;
-  font-size: 14px;
+  margin: 0 8px 10px 0;
   text-align: center;
-  overflow: hidden;
+}
+.main .floors .floor .floor_pro .floor_pro_r ul li a {
   display: block;
-  margin-top: 6px;
-  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  color: #979797;
+}
+.main .floors .floor .floor_pro .floor_pro_r ul li a p {
+  color: #3e3a39;
+  font-size: 14px;
   height: 17px;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.main .floors .floor1 .floor_pro .floor_pro_r ul li a:nth-last-child(2) {
-  color: #979797;
-  font-size: 12px;
-  text-decoration: none;
   text-align: center;
+  max-width: 200px;
+  padding: 0 10px;
 }
-.main .floors .floor1 .floor_pro .floor_pro_r ul li span {
+.main .floors .floor .floor_pro .floor_pro_r ul li a span {
+  display: block;
+  margin-top: 10px;
+}
+.main .floors .floor .floor_pro .floor_pro_r ul li a em {
   color: #FF4D4F;
   font-size: 14px;
   cursor: pointer;
   display: block;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .main .render {
   width: 1200px;
@@ -718,6 +720,43 @@ table {
   height: 180px;
   background-color: darkviolet;
   cursor: pointer;
+}
+.main #stairway {
+  top: 288px;
+  display: block;
+  position: fixed;
+  width: 60px;
+  text-align: center;
+  line-height: 28px;
+  right: 15px;
+  z-index: 10;
+}
+.main #stairway ul li {
+  background: #fff;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  line-height: 34px;
+  color: #ed5759;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main #stairway ul li .floor_h {
+  display: none;
+  font-size: 12px;
+}
+.main #stairway ul li .floor_s {
+  font-size: 12px;
+}
+.main #stairway ul li:hover {
+  border: 1px solid #cc0000;
+  background: #e9b7b7;
+}
+.main #stairway ul li:hover .floor_s {
+  display: none;
+}
+.main #stairway ul li:hover .floor_h {
+  display: block;
 }
 .main .footad {
   width: 1200px;

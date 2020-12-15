@@ -280,6 +280,16 @@ li {
   background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/31/a248c186-fd9d-47bb-9bb6-409e588d4d86.jpg) no-repeat center;
 }
 
+.sort {
+  width: 1200px;
+  height: 30px;
+  margin: 20px auto;
+}
+.sort button {
+  outline-style: none;
+  color: red;
+}
+
 .pro_list {
   width: 1200px;
   margin: 20px auto;

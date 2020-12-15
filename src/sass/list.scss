@@ -188,10 +188,22 @@ $cursor:pointer;
     }
 }
 
+// 列表页banner图
 .list_banner {
     width: 100%;
     height: 450px;
     background: url(https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/31/a248c186-fd9d-47bb-9bb6-409e588d4d86.jpg) no-repeat center;
+}
+
+//  排序
+.sort {
+    width: 1200px;
+    height: 30px;
+    margin: 20px auto;
+    button {
+        outline-style: none;
+        color: red;
+    }
 }
 
 // 渲染列表样式
