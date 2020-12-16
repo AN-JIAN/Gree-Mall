@@ -72,25 +72,55 @@ define(['jlazyload'], () => {
 
     // 点击小圆点让轮播盒子移动。显示对应图片。
     $btnlist.on('click', function() {
-        $num = $(this).index();
-        $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
+        $num = $(this).index() - 1;
+        // $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
 
-        $banner.animate({
-            left: -$liwidth * $num
-        });
+        // $banner.stop(true).animate({
+        //     left: (-$liwidth * $num - 1)
+        // });
+        tabSwitch();
+        // clearInterval($timer);
+        console.log(1);
+
 
     });
+
+    function tabSwitch() {
+        $num++;
+        if ($num === $btnlist.size() + 1) {
+            $ulist.css('left', 0);
+            $num = 1;
+        }
+        if ($num === -1) {
+            $ulist.css('left', -$liwidth * $btnlist.size());
+            $num = $btnlist.size() - 1;
+        }
+
+
+        if ($num === $btnlist.size()) {
+            $btnlist.eq(0).addClass('active').siblings('li').removeClass('active');
+        } else {
+            $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
+        }
+
+
+        $banner.stop(true).animate({
+            left: -$liwidth * $num
+        });
+        $('title').html($num);
+    }
 
     $bannerbox.hover(function() {
         clearInterval($timer);
     }, function() {
         $timer = setInterval(function() {
             $btnlist.click();
-        }, 1000);
+        }, 3000);
     });
     $timer = setInterval(function() {
+
         $btnlist.click();
-    }, 1000);
+    }, 3000);
 
 }(jQuery);
 

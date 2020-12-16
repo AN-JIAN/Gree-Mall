@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+li {
+    list-style: none;
+}
+
+$page_width:100%;
+$box_width:1200px;
+$td:none;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$cursor:pointer;
+@import "top";
+@import "footer";
+.header {
+    width: $box_width;
+    height: 110px;
+    margin: 0 auto;
+    background-color: #fff;
+    // 头部logo
+    .head_logo {
+        width: 210px;
+        height: 80px;
+        float: left;
+        margin-top: 10px;
+        img {
+            width: 174px;
+            height: 100%;
+        }
+    }
+    .tree {
+        float: right;
+        width: 482px;
+        height: 48px;
+        margin: 40px 0px 0px auto;
+        background: url(https://mall.gree.com/assets/images/tree.jpg) no-repeat;
+    }
+}
