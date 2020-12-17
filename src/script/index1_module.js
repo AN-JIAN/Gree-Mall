@@ -73,17 +73,18 @@ define(['jlazyload'], () => {
     // 点击小圆点让轮播盒子移动。显示对应图片。
     $btnlist.on('click', function() {
         $num = $(this).index() - 1;
-        // $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
+        $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
 
-        // $banner.stop(true).animate({
-        //     left: (-$liwidth * $num - 1)
-        // });
+        $banner.stop(true).animate({
+            left: (-$liwidth * $num - 1)
+        });
         tabSwitch();
         // clearInterval($timer);
-        console.log(1);
+        // console.log(1);
 
 
     });
+
 
     function tabSwitch() {
         $num++;
@@ -117,8 +118,8 @@ define(['jlazyload'], () => {
             $btnlist.click();
         }, 3000);
     });
+    // 定时器
     $timer = setInterval(function() {
-
         $btnlist.click();
     }, 3000);
 

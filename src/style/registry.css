@@ -161,7 +161,7 @@ li {
 .registry {
   width: 980px;
   height: 542px;
-  margin: 50px auto;
+  margin: 10px auto;
   border: 1px #e8e8e8 solid;
 }
 .registry legend {
@@ -195,7 +195,7 @@ li {
 }
 .registry ul li .phone_box,
 .registry ul li .mima_box,
-.registry ul li .password {
+.registry ul li .affirm {
   width: 280px;
   height: 39px;
   background-color: #fff;
@@ -205,33 +205,30 @@ li {
 }
 .registry ul li .phone_box input,
 .registry ul li .mima_box input,
-.registry ul li .password input {
+.registry ul li .affirm input {
   color: #474747;
   width: 220px;
   height: 35px;
   line-height: 35px;
-  padding-left: 15px;
   outline-style: none;
   border: none;
-  vertical-align: middle;
   font-size: 16px;
 }
 .registry ul li .phone_box .iconfont,
 .registry ul li .mima_box .iconfont,
-.registry ul li .password .iconfont {
+.registry ul li .affirm .iconfont {
   font-size: 25px;
   color: #ccc;
   vertical-align: middle;
 }
 .registry ul li p {
   width: 280px;
-  background-color: greenyellow;
+  background-color: #ccc;
   position: absolute;
   top: 6px;
   right: -5px;
   text-align: center;
   color: red;
-  display: none;
 }
 .registry ul li .protocol {
   font-size: 12px;
@@ -247,7 +244,7 @@ li {
   color: #747474;
   font-size: 12px;
 }
-.registry button {
+.registry #argee {
   background: #cc0000;
   text-align: center;
   border: none;

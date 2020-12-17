@@ -745,7 +745,7 @@ i {
 }
 
 .quantity-form a {
-    display: inline-block;
+    /* display: inline-block; */
     height: 18px;
     line-height: 18px;
     padding: 1px 0;
@@ -754,7 +754,7 @@ i {
     color: #666;
     margin: 0;
     background: #fff;
-    /* float: left; */
+    float: left;
 }
 
 .quantity-form .quantity-down {

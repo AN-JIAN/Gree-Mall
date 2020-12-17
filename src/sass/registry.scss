@@ -63,7 +63,7 @@ $height:35px;
 .registry {
     width: 980px;
     height: 542px;
-    margin: 50px auto;
+    margin: 10px auto;
     border: 1px #e8e8e8 solid;
     legend {
         font-size: 14px;
@@ -94,7 +94,7 @@ $height:35px;
             }
             .phone_box,
             .mima_box,
-            .password {
+            .affirm {
                 width: 280px;
                 height: 39px;
                 background-color: #fff;
@@ -106,11 +106,12 @@ $height:35px;
                     width: 220px;
                     height: 35px;
                     line-height: 35px;
-                    padding-left: 15px;
+                    // padding-left: 15px;
                     outline-style: none;
                     border: none;
-                    vertical-align: middle;
+                    // vertical-align: middle;
                     font-size: 16px;
+                    // padding: 1px 2px;
                 }
                 .iconfont {
                     font-size: 25px;
@@ -121,13 +122,13 @@ $height:35px;
             // 提示信息
             p {
                 width: 280px;
-                background-color: greenyellow;
+                background-color: #ccc;
                 position: absolute;
                 top: 6px;
                 right: -5px;
                 text-align: center;
                 color: red;
-                display: none;
+                // display: none;
             }
             .protocol {
                 font-size: 12px;
@@ -145,7 +146,7 @@ $height:35px;
             }
         }
     }
-    button {
+    #argee {
         background: #cc0000;
         text-align: center;
         border: none;

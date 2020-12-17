@@ -9,7 +9,7 @@
     <meta name="Keywords" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="style/login.css">
-
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
 </head>
 
 <body>
@@ -31,20 +31,19 @@
             <img src="https://mall.gree.com/assets/images/login_pic1.png" alt="">
         </div>
         <div class="register_box">
-            <form action="">
+            <form action="post">
                 <ul>
                     <li>
-                        <input type="text" placeholder="手机号/用户名/邮箱">
-                        <span class="iconfont icon-yonghu
-                        "></span>
+                        <input type="text" placeholder="手机号/用户名/邮箱" name="tel" class="tel">
+                        <span class="iconfont icon-yonghu"></span>
                     </li>
                     <li>
-                        <input type="text" placeholder="请登陆密码">
+                        <input type="password" placeholder="登陆密码" name="password" class="password">
                         <span class="iconfont icon-mima
                         "></span>
                         <span class="hint">请输入登陆密码</span>
                     </li>
-                    <li><button>登 录</button></li>
+                    <li><button class="login">登 录</button></li>
                     <li>
                         <a href="#">
                             <span class="iconfont icon-QQ"></span>
@@ -62,20 +61,6 @@
     </div>
     <!-- 登录页面底部 -->
     <div class="footer">
-        <ul class="service">
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/d31fdb2b-d299-4a2c-afca-a02fcc3de0c4.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/20ea3c57-6b74-4b03-8c66-b069c1853abb.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/30/16adc0c5-d075-4cd5-8661-8efc54dad2b5.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/8dc037c6-cec1-4aad-8383-fddc6f14dd65.png" alt="">
-            </li>
-        </ul>
         <ul class="serve">
             <li>
                 <dl>

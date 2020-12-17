@@ -9,6 +9,7 @@
     <meta name="Keywords" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="style/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
@@ -73,20 +74,18 @@
     <!-- 注册 -->
     <fieldset class="registry">
         <legend>用户注册</legend>
-        <form action="">
+        <form action="http://10.31.161.36/Gree%20Mall/php/reg.php" method="post" id="form1">
             <ul>
-
                 <li>
                     <div>
                         <i>*</i>
                         <span>手机：</span>
                     </div>
                     <div class="phone_box">
-                        <input type="text" placeholder="请输入手机号">
-                        <span class="iconfont icon-phone
-                        "></span>
+                        <input type="text" class="tel" placeholder="请输入手机号" name="tel">
+                        <span class="iconfont icon-phone"></span>
                     </div>
-                    <p>请输入正确的手机号</p>
+                    <p></p>
                 </li>
                 <li>
                     <div>
@@ -94,21 +93,21 @@
                         <span>请设置密码：</span>
                     </div>
                     <div class="mima_box">
-                        <input type="text" placeholder="请输入密码">
+                        <input type="password" class="password" placeholder="请输入密码" name="password">
                         <span class="iconfont icon-mima"></span>
                     </div>
-                    <p>6-20字符,由数字字母下划线组成</p>
+                    <p></p>
                 </li>
                 <li>
                     <div>
                         <i>*</i>
                         <span>请确认密码：</span>
                     </div>
-                    <div class="password">
-                        <input type="text" placeholder="请再次输入密码">
+                    <div class="affirm">
+                        <input type="password" placeholder="请再次输入密码" class="sure" name="sure">
                         <span class="iconfont icon-mima"></span>
                     </div>
-                    <p>两次输入密码不一致</p>
+                    <p></p>
                 </li>
                 <li>
                     <div class="protocol">
@@ -117,27 +116,12 @@
                         <a href="#">《隐私声明》</a>
                     </div>
                 </li>
-                <button>同意协议并注册</button>
+                <input type="submit" id="argee" name="submit" value="同意协议并注册">
             </ul>
-
         </form>
     </fieldset>
     <!-- 注册底部 -->
     <div class="footer">
-        <ul class="service">
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/d31fdb2b-d299-4a2c-afca-a02fcc3de0c4.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/20ea3c57-6b74-4b03-8c66-b069c1853abb.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/30/16adc0c5-d075-4cd5-8661-8efc54dad2b5.png" alt="">
-            </li>
-            <li>
-                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/12/8dc037c6-cec1-4aad-8383-fddc6f14dd65.png" alt="">
-            </li>
-        </ul>
         <ul class="serve">
             <li>
                 <dl>
