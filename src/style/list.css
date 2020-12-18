@@ -244,13 +244,12 @@ li {
 .list_header .mid_search {
   float: right;
   padding-right: 79px;
-  width: auto;
-  width: 416px;
+  width: 422px;
   height: 35px;
   margin-top: 25px;
   border: 2px solid #cc0000;
 }
-.list_header .mid_search input {
+.list_header .mid_search .search {
   width: 321px;
   height: 33px;
   padding-left: 10px;

@@ -3,8 +3,7 @@ define(['jcookie'], () => {
         init: function() {
             //1.通过地址栏获取列表页面传入的sid。
             let $sid = location.search.substring(1).split('=')[1];
-
-            if (!$sid) { //列表页面没有传入sid，默认为1
+            if (!$sid) {
                 $sid = 1;
             }
 
@@ -16,23 +15,19 @@ define(['jcookie'], () => {
                 },
                 dataType: 'json'
             }).done(function(data) {
-                //获取数据，将数据放入对应的结构中。
                 $('.spic').attr('src', data.url);
                 $('.loadtitle').html(data.title);
                 $('.loadpcp').html(data.price);
                 $('.bpic').attr('src', data.url);
 
                 let $list = $('.list');
-                // console.log($list);
-                //渲染放大镜下面的小图
                 let $picurl = data.urls.split(','); //将数据转换成数组。
-                console.log($picurl);
+                // console.log($picurl);
                 let $strhtml = '<ul>';
                 // let $strhtml = '';
                 $.each($picurl, function(index, value) {
                     $strhtml += `<li><img src="${value}"/></li>`;
                 });
-
                 $strhtml += '<ul>';
                 $list.html($strhtml);
             });
@@ -56,14 +51,8 @@ define(['jcookie'], () => {
                 $bf.css('visibility', 'visible');
                 $(this).on('mousemove', (ev) => {
 
-                    // console.log($('.goodsinfo').offset().left);
-                    // console.log($('.detail').offset().left);
                     let $leftvalue = ev.pageX - $(this).offset().left - $sf.width() / 2;
-                    // console.log($leftvalue);
-                    // let $leftvalue = ev.pageX - $(this).offset().left - $sf.width() / 2;
                     let $topvalue = ev.pageY - $('.middle').offset().top - $sf.height() / 2;
-                    // let $topvalue = ev.pageY - $(this).offset().left - $sf.height() / 2;
-                    // console.log($leftvalue);
                     if ($leftvalue < 0) {
                         $leftvalue = 0;
                     } else if ($leftvalue >= $spic.width() - $sf.width()) {
@@ -96,7 +85,6 @@ define(['jcookie'], () => {
             //小图切换
             $('.list').on('click', 'li', function() {
                 let $src = $(this).find('img').attr('src');
-                // console.log($src);
                 $('.spic').attr('src', $src);
                 $('.bpic').attr('src', $src);
             });
@@ -142,7 +130,6 @@ define(['jcookie'], () => {
             //如果是第一次存储，创建商品的列表显示在购物车列表页面。
             //如果是多次存储，购物车列表页面里面的商品数量累加。
 
-
             //如何判断是第一次还是第二次
             //通过获取cookie进行判断，每存储一个商品对应的商品编号存入cookie里面，cookie就会发生变化。如果cookie里面存在当前商品的编号，该商品不是第一次存储，直接数量累加。
 
@@ -174,7 +161,7 @@ define(['jcookie'], () => {
                     arrnum[$index] = parseInt(arrnum[$index]) + parseInt($('#count').val()); //重新赋值
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮被点击了');
+                alert('已加入购物车');
             });
         }
     }

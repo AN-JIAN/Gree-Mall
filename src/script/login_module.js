@@ -6,6 +6,7 @@ define([], function() {
             const $login = $('.login'); //登录按钮
 
             $login.on('click', function() {
+
                 $.ajax({
                     type: 'post',
                     url: 'http://10.31.161.36/Gree%20Mall/php/login.php',
@@ -14,12 +15,12 @@ define([], function() {
                         pass: $password.val()
                     }
                 }).done(function(data) {
-                    if (!data) { //登录失败
+                    console.log(data);
+                    if (!data) {
                         alert('用户名或者密码有误!');
-                        $password.val(''); //密码清空
-                    } else { //登录成功
-                        location.href = 'index1.html'; //前端和前端进行页面的通信，相对路径即可，如果是前后端的通信一定是觉对路径。
-                        //存储用户名，方便首页获取。
+                        $password.val('');
+                    } else {
+                        location.href = 'index.html';
                         localStorage.setItem('loginname', $tel.val());
                     }
                 })

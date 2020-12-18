@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             //渲染
             const $list = $('.floor_pro_r ul');
             $.ajax({
-                url: 'http://10.31.161.36/Gree%20Mall/php/index1.php',
+                url: 'http://10.31.161.36/Gree%20Mall/php/index.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -21,43 +21,16 @@ define(['jlazyload'], () => {
                     `;
                 });
                 $list.html($strhtml);
-
-
                 // 懒加载
                 $("img.lazy").lazyload({ effect: "fadeIn" });
             });
         },
-        // init1: function() {
-        //     function scroll() {
-        //         var top = $(window).scrollTop();
-        //         top >= 1000 ? $('#leftBar').show() : $('#leftBar').hide();
-        //         $('.floor').each(function(index, element) {
-        //             var loutop = $(this).offset().top;
-        //             if (loutop >= top) {
-        //                 $('#leftBar li').removeClass('active');
-        //                 $('#leftBar li').eq($(this).index()).addClass('active');
-        //                 return false;
-        //             }
-        //         });
-        //     }
-        //     scroll();
-        //     $(window).on('scroll', function() {
-        //         scroll();
-        //     });
-        //     $('#leftBar li').on('click', function() {
-        //         $(this).addClass('active').siblings().removeClass('active');
-        //         var loutop = $('.floor').eq($(this).index()).offset().top;
-        //         $('html').animate({
-        //             scrollTop: loutop
-        //         });
-        //     })
-        // }
+
     }
 });
 
 
 // 轮播图
-
 ! function($) {
     const $bannerbox = $('.banner_box'); // 外层大盒子
     const $banner = $('.banner'); // 轮播盒子
@@ -79,10 +52,6 @@ define(['jlazyload'], () => {
             left: (-$liwidth * $num - 1)
         });
         tabSwitch();
-        // clearInterval($timer);
-        // console.log(1);
-
-
     });
 
 
@@ -97,18 +66,15 @@ define(['jlazyload'], () => {
             $num = $btnlist.size() - 1;
         }
 
-
         if ($num === $btnlist.size()) {
             $btnlist.eq(0).addClass('active').siblings('li').removeClass('active');
         } else {
             $btnlist.eq($num).addClass('active').siblings('li').removeClass('active');
         }
 
-
         $banner.stop(true).animate({
             left: -$liwidth * $num
         });
-        $('title').html($num);
     }
 
     $bannerbox.hover(function() {

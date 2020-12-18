@@ -22,15 +22,12 @@ define([], function() {
                 $message.eq(0).html('请输入手机号码');
             });
             $tel.on('blur', function() {
-                // console.log(1);
                 let $value = $(this).val(); // 当前表单的值
-                // console.log($value);
                 if ($value !== '') {
                     let $reg = /^1[3|5|6|7|8]\d{9}$/;
                     if ($reg.test($value)) {
                         $message.eq(0).html('√').css('color', 'green');
                         $telflag = true;
-
                         $.ajax({
                             type: 'post',
                             url: 'http://10.31.161.36/Gree%20Mall/php/reg.php',
@@ -69,23 +66,8 @@ define([], function() {
                 if ($value !== '') {
                     let $regpassword = /^[a-z0-9_-]{6,18}$/;
                     if ($regpassword.test($value)) {
-                        $.ajax({
-                            type: 'post',
-                            url: 'http://10.31.161.36/Gree%20Mall/php/reg.php',
-                            data: {
-                                tel: $tel.val(),
-                                password: $password.val()
-                            }
-                        }).done(function(data) {
-                            if (!data) {
-                                $message.eq(1).html('√').css('color', 'green');
-                                $passflag = true;
-                            } else {
-                                $message.eq(1).html('密码格式有误').css('color', 'red');
-                                $passflag = false;
-                            }
-                        })
-
+                        $message.eq(1).html('√').css('color', 'green');
+                        $passflag = true;
                     } else {
                         $message.eq(1).html('密码格式有误，请从新输入').css('color', 'red');
                         $passflag = false;
@@ -120,25 +102,19 @@ define([], function() {
 
 
 
-
-
-
             //   阻止表单跳转
             $form.on('submit', function() {
                 if ($tel.val() === '') {
-                    // $message.eq(0).html('手机号不能为空').css('color', 'red');
                     $message.eq(0).html('手机号码不能为空');
                     $telflag = false;
                 }
 
                 if ($password.val() === '') {
-                    // $message.eq(1).html('请输入密码').css('color', 'red');
                     $message.eq(1).html('密码不能为空');
                     $passflag = false;
                 }
 
                 if ($sure.val() === '') {
-                    // $message.eq(2).html('您输入的密码不一致').css('color', 'red');
                     $message.eq(2).html('请验证密码');
                     $sureflag = false;
                 }

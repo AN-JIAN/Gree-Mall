@@ -4,8 +4,8 @@ define(['jcookie'], () => {
             // 1.获取cookie - 主要是来自于详情页。
             function getcookietoarray() {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
-                    let $arrsid = $.cookie('cookiesid').split(','); //[1,2] 
-                    let $arrnum = $.cookie('cookienum').split(','); //[10,20] 
+                    let $arrsid = $.cookie('cookiesid').split(',');
+                    let $arrnum = $.cookie('cookienum').split(',');
                     $.each($arrsid, function(index, value) {
                         rendergoods($arrsid[index], $arrnum[index]); //index:数组的索引
                     });
@@ -76,11 +76,9 @@ define(['jcookie'], () => {
 
             // 5.改变数量 - 增加减少数量 - cookie有关
             $('.quantity-add').on('click', function() {
-                //parents():获取当前元素的所有的父级(祖先元素)
-                //parent():获取当前元素的父级
                 let $num = $(this).parents('.goods-item').find('.quantity-form input').val(); //取值
-                $num++; //累加
-                if ($num > 99) { //防止数据过大，Bigint：js新增的数据类型，大整型。
+                $num++;
+                if ($num > 99) {
                     $num = 99;
                 }
                 $(this).parents('.goods-item').find('.quantity-form input').val($num); //赋值
